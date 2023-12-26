@@ -10,10 +10,6 @@
 <h1 class="py-4 flex justify-center font-semibold text-3xl">Noah Wessels</h1>
 
 <Contact/>
-
-
-
-
 <div class="py-4 flex justify-center items-center space-x-8">
     <img src={lathe} alt="MENG shop" class="p-2 w-1/3 flex justify-center"/>
     <div class="w-96">
