@@ -6,6 +6,8 @@
 <Nav/>
 
 <slot></slot>
+
+
 <Footer/>
 
 <style>

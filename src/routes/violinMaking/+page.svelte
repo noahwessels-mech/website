@@ -2,5 +2,87 @@
     <title>Noah Wessels Fine Violins</title>
 </svelte:head>
 
+
+<script>
+    import { onMount } from 'svelte';
+    
+    let img1 = '/src/lib/back.jpg'; // replace with your image paths
+    let img2 = '/src/lib/carvingScroll.jpg'; // replace with your image paths
+    let img3 = '/src/lib/second.jpg'; 
+    let img4 = '/src/lib/front.jpg'; 
+    let img5 = '/src/lib/oldFiddle.jpg'; 
+    let img6 = '/src/lib/purfling.jpg'; 
+    let img7 = '/src/lib/ribs.jpg'; 
+    let img8 = '/src/lib/sawnback.jpg'; 
+    let img9 = '/src/lib/scroll.jpg'; 
+    let img10 = '/src/lib/Stradivarius.jpg'; 
+    let img11 = '/src/lib/stradFront.jpg'; 
+    let img12 = '/src/lib/stradBack.jpg'; 
+  
+    onMount(() => {
+      // Any setup logic can be placed here
+    });
+  </script>
+
+
+<style>
+    .video-div{
+        display: flex;
+        justify-content: center;
+    }
+    .video{
+        width: 50%;
+        aspect-ratio: 16/9;
+    }
+
+</style>
+
 <h1 class="py-4 flex justify-center font-semibold text-3xl">Violin Making</h1>
-<p>I make violins</p>
+
+<div class="flex justify-center">
+    <p class="p-4 w-1/2">For the past four years I have been making violins. I started by buying specialized <a class="px-1 text-blue-500 underline" href="https://www.abebooks.it/9780709058762/Art-Violin-Making-Johnson-Chris-0709058764/plp" target="_blank">books</a> and <a class="px-1 text-blue-500 underline" href="https://www.cremonatools.com/violin-making.html?p=2" target="_blank">tools</a>. I am currently working on my third violin.</p>
+</div>
+
+
+<div class="flex justify-center">
+    <p class="p-2 w-1/2 flex">Here is a video I made in my senior year of highschool where I recorded the process of making the top of my second violin</p>
+</div>
+
+<div class="video-div">
+    <iframe class="video" title="" src="https://www.youtube.com/embed/fELBDT2yrxg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+  
+<section class="px-4 py-8">
+    <h2 class="text-3xl font-bold text-center py-4">Gallery</h2>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+      <img class="w-full h-64 object-cover" src={img1} alt="Description of image 1" />
+      <img class="w-full h-64 object-cover" src={img2} alt="Description of image 2" />
+      <img class="w-full h-64 object-cover" src={img3} alt="Description of image 3" />
+      <img class="w-full h-64 object-cover" src={img4} alt="Description of image 4" />
+      <img class="w-full h-64 object-cover" src={img5} alt="Description of image 5" />
+      <img class="w-full h-64 object-cover" src={img6} alt="Description of image 6" />
+      <img class="w-full h-64 object-cover" src={img7} alt="Description of image 7" />
+      <img class="w-full h-64 object-cover" src={img8} alt="Description of image 8" />
+      <img class="w-full h-64 object-cover" src={img9} alt="Description of image 9" />
+    </div>
+  </section>
+
+
+  <section class="px-4 py-8">
+    <h2 class="text-3xl font-bold text-center py-4">Cremona</h2>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center mb-4">
+      <div>
+        <p>Cremona is recognized as the birthplace of the modern violin. I had the pleasure of visiting this beautiful city in May of 2023, and am currently learning Italian with great anticipation of returning in the future to deepen my understanding of violin making.</p>
+      </div>
+      <img class="h-80 object-cover" src={img10} alt="Description of image 1" />
+    </div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">
+      <img class="w-full h-72 object-cover" src={img11} alt="something" />
+      <img class="w-full h-72 object-cover" src={img12} alt="something" />
+    </div>
+  </section>

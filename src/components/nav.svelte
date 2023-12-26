@@ -3,5 +3,4 @@
     <a class="mx-3" href="/uveec">UVEEC</a>
     <a class="mx-3" href="/machiningPortfolio">Machining</a>
     <a class="mx-3" href="/violinMaking">Violin Making</a>
-  
 </nav>
