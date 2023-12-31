@@ -7,16 +7,16 @@
 
     let footerNote;
   
-    let img1 = '/src/lib/headPlate.jpg';
-    let img2 = '/src/lib/mounts.jpg';
-    let img3 = '/src/lib/machineCap.jpg';
-    let img4 = '/src/lib/capOnSub.jpg';
-    let img5 = '/src/lib/rod.jpg';
-    let img6 = '/src/lib/frame.jpg';
-    let img7 = '/src/lib/program.jpg';
-    let img8 = '/src/lib/wheel.jpg';
-    let img9 = '/src/lib/aluminumForks.jpg';
-    let img10 = '/src/lib/brassFork.jpg';
+    let img1 = './src/lib/headPlate.jpg';
+    let img2 = './src/lib/mounts.jpg';
+    let img3 = './src/lib/machineCap.jpg';
+    let img4 = './src/lib/capOnSub.jpg';
+    let img5 = './src/lib/rod.jpg';
+    let img6 = './src/lib/frame.jpg';
+    let img7 = './src/lib/program.jpg';
+    let img8 = './src/lib/wheel.jpg';
+    let img9 = './src/lib/aluminumForks.jpg';
+    let img10 = './src/lib/brassFork.jpg';
   
     onMount(() => {
     document.querySelector("#footerNote").addEventListener('click', () => {

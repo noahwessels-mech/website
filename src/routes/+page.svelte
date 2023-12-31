@@ -4,7 +4,7 @@
 
 <script>
     import Contact from "../components/contact.svelte"
-    import lathe from "/src/lib/lathe.jpg"
+    import lathe from "./src/lib/lathe.jpg"
 </script>
 
 <h1 class="py-4 flex justify-center font-semibold text-3xl">Noah Wessels</h1>
