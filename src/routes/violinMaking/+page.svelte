@@ -58,15 +58,15 @@
     <h2 class="text-3xl font-bold text-center py-4">Gallery</h2>
   
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-      <img class="w-full h-64 object-cover" src={img1} alt="Description of image 1" />
-      <img class="w-full h-64 object-cover" src={img2} alt="Description of image 2" />
-      <img class="w-full h-64 object-cover" src={img3} alt="Description of image 3" />
-      <img class="w-full h-64 object-cover" src={img4} alt="Description of image 4" />
-      <img class="w-full h-64 object-cover" src={img5} alt="Description of image 5" />
-      <img class="w-full h-64 object-cover" src={img6} alt="Description of image 6" />
-      <img class="w-full h-64 object-cover" src={img7} alt="Description of image 7" />
-      <img class="w-full h-64 object-cover" src={img8} alt="Description of image 8" />
-      <img class="w-full h-64 object-cover" src={img9} alt="Description of image 9" />
+      <img class="w-full h-64 object-cover" src={img1} alt="Description  1" />
+      <img class="w-full h-64 object-cover" src={img2} alt="Description  2" />
+      <img class="w-full h-64 object-cover" src={img3} alt="Description  3" />
+      <img class="w-full h-64 object-cover" src={img4} alt="Description  4" />
+      <img class="w-full h-64 object-cover" src={img5} alt="Description  5" />
+      <img class="w-full h-64 object-cover" src={img6} alt="Description  6" />
+      <img class="w-full h-64 object-cover" src={img7} alt="Description  7" />
+      <img class="w-full h-64 object-cover" src={img8} alt="Description  8" />
+      <img class="w-full h-64 object-cover" src={img9} alt="Description  9" />
     </div>
   </section>
 
