@@ -6,9 +6,9 @@
 <script>
     import { onMount } from 'svelte';
     
-    let img1 = '/static/USV.jpg'; // replace with your image paths
-    let img2 = '/static/testing.jpg'; // replace with your image paths
-    let img3 = '/static/hullManufacturing.JPG'; 
+    import img1 from '/static/USV.jpg'; // replace with your image paths
+    import img2 from '/static/testing.jpg'; // replace with your image paths
+    import img3 from '/static/hullManufacturing.JPG'; 
   
     onMount(() => {
       // Any setup logic can be placed here

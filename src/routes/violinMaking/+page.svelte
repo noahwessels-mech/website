@@ -4,20 +4,18 @@
 
 
 <script>
-    import { onMount } from 'svelte';
-    
-    let img1 = '/src/lib/back.jpg'; // replace with your image paths
-    let img2 = '/src/lib/carvingScroll.jpg'; // replace with your image paths
-    let img3 = '/src/lib/second.jpg'; 
-    let img4 = '/src/lib/front.jpg'; 
-    let img5 = '/src/lib/oldFiddle.jpg'; 
-    let img6 = '/src/lib/purfling.jpg'; 
-    let img7 = '/src/lib/ribs.jpg'; 
-    let img8 = '/src/lib/sawnback.jpg'; 
-    let img9 = '/src/lib/scroll.jpg'; 
-    let img10 = '/src/lib/Stradivarius.jpg'; 
-    let img11 = '/src/lib/stradFront.jpg'; 
-    let img12 = '/src/lib/stradBack.jpg'; 
+    import img1 from '/static/back.jpg'; // replace with your image paths
+    let img2 = '/static/carvingScroll.jpg'; // replace with your image paths
+    let img3 = '/static/second.jpg'; 
+    let img4 = '/static/front.jpg'; 
+    let img5 = '/static/oldFiddle.jpg'; 
+    let img6 = '/static/purfling.jpg'; 
+    let img7 = '/static/ribs.jpg'; 
+    let img8 = '/static/sawnback.jpg'; 
+    let img9 = '/static/scroll.jpg'; 
+    let img10 = '/static/Stradivarius.jpg'; 
+    let img11 = '/static/stradFront.jpg'; 
+    let img12 = '/static/stradBack.jpg'; 
   
     onMount(() => {
       // Any setup logic can be placed here
@@ -78,7 +76,7 @@
       <div>
         <p>Cremona is recognized as the birthplace of the modern violin. I had the pleasure of visiting this beautiful city in May of 2023, and am currently learning Italian with great anticipation of returning in the future to deepen my understanding of violin making.</p>
       </div>
-      <img class="h-80 object-cover" src={img10} alt="Description of image 1" />
+      <img class="h-80 object-cover" src={img10} alt="Description 1" />
     </div>
   
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center">

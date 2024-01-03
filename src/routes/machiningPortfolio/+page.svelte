@@ -7,16 +7,16 @@
 
     let footerNote;
   
-    let img1 = './src/lib/headPlate.jpg';
-    let img2 = './src/lib/mounts.jpg';
-    let img3 = './src/lib/machineCap.jpg';
-    let img4 = './src/lib/capOnSub.jpg';
-    let img5 = './src/lib/rod.jpg';
-    let img6 = './src/lib/frame.jpg';
-    let img7 = './src/lib/program.jpg';
-    let img8 = './src/lib/wheel.jpg';
-    let img9 = './src/lib/aluminumForks.jpg';
-    let img10 = './src/lib/brassFork.jpg';
+    let img1 = '/static/headPlate.jpg';
+    let img2 = '/static/mounts.jpg';
+    let img3 = '/static/machineCap.jpg';
+    let img4 = '/static/capOnSub.jpg';
+    let img5 = '/static/rod.jpg';
+    let img6 = '/static/frame.jpg';
+    let img7 = '/static/program.jpg';
+    let img8 = '/static/wheel.jpg';
+    let img9 = '/static/aluminumForks.jpg';
+    let img10 = '/static/brassFork.jpg';
   
     onMount(() => {
     document.querySelector("#footerNote").addEventListener('click', () => {
@@ -31,7 +31,7 @@
 
 <section id="top" class="px-4 py-8">
     <div class="flex justify-center">
-        <p class="mb-4 w-1/2">This page contains a few of the parts I have machined. The manufacturing of these parts took place both within my co-op placement at the UVic Mechanical Engineering Machine Shop as well as afterwards when making parts for various university engineering clubs <a id="#footerNote" href="javascript:void(0)">*</a>.</p>
+        <p class="mb-4 w-1/2">This page contains a few of the parts I have machined. The manufacturing of these parts took place both within my co-op placement at the UVic Mechanical Engineering Machine Shop as well as afterwards when making parts for various university engineering clubs <a id="#footerNote">*</a>.</p>
     </div>
 
 
