@@ -7,16 +7,16 @@
 
     let footerNote;
   
-    import img1 from '/static/headPlate.jpg';
+    import img1 from '/static/headPlate.JPG';
     import img2 from '/static/mounts.jpg';
     import img3 from '/static/machineCap.jpg';
     import img4 from '/static/capOnSub.jpg';
     import img5 from '/static/rod.jpg';
     import img6 from '/static/frame.jpg';
-    import img7 from '/static/program.jpg';
+    import img7 from '/static/program.JPG';
     import img8 from '/static/wheel.jpg';
-    import img9 from '/static/aluminumForks.jpg';
-    import img10 from '/static/brassFork.jpg';
+    import img9 from '/static/aluminumForks.JPG';
+    import img10 from '/static/brassFork.JPG';
   
     onMount(() => {
     document.querySelector("#footerNote").addEventListener('click', () => {
