@@ -7,16 +7,16 @@
 
     let footerNote;
   
-    let img1 = '/static/headPlate.jpg';
-    let img2 = '/static/mounts.jpg';
-    let img3 = '/static/machineCap.jpg';
-    let img4 = '/static/capOnSub.jpg';
-    let img5 = '/static/rod.jpg';
-    let img6 = '/static/frame.jpg';
-    let img7 = '/static/program.jpg';
-    let img8 = '/static/wheel.jpg';
-    let img9 = '/static/aluminumForks.jpg';
-    let img10 = '/static/brassFork.jpg';
+    import img1 from '/static/headPlate.jpg';
+    import img2 from '/static/mounts.jpg';
+    import img3 from '/static/machineCap.jpg';
+    import img4 from '/static/capOnSub.jpg';
+    import img5 from '/static/rod.jpg';
+    import img6 from '/static/frame.jpg';
+    import img7 from '/static/program.jpg';
+    import img8 from '/static/wheel.jpg';
+    import img9 from '/static/aluminumForks.jpg';
+    import img10 from '/static/brassFork.jpg';
   
     onMount(() => {
     document.querySelector("#footerNote").addEventListener('click', () => {
@@ -57,7 +57,7 @@
             <img class="w-full h-80 object-cover" src={img8} alt="End product of the machining process" />
             </div>
           <div>
-            <p>The MECH Machine Shop laser was frequently used for cutting parts for student projects. In these photos a wooden wheel was cut and put on a Delrin shaft with a keyway.</p>
+            <p>The MECH Machine Shop laser was frequently used for cutting parts for student projects. In these photos a wooden wheel was cut and attached to a Delrin shaft with a keyway.</p>
           </div>
         </div>
 

@@ -5,21 +5,18 @@
 
 <script>
     import img1 from '/static/back.jpg'; // replace with your image paths
-    let img2 = '/static/carvingScroll.jpg'; // replace with your image paths
-    let img3 = '/static/second.jpg'; 
-    let img4 = '/static/front.jpg'; 
-    let img5 = '/static/oldFiddle.jpg'; 
-    let img6 = '/static/purfling.jpg'; 
-    let img7 = '/static/ribs.jpg'; 
-    let img8 = '/static/sawnback.jpg'; 
-    let img9 = '/static/scroll.jpg'; 
-    let img10 = '/static/Stradivarius.jpg'; 
-    let img11 = '/static/stradFront.jpg'; 
-    let img12 = '/static/stradBack.jpg'; 
+    import img2 from '/static/carvingScroll.jpg'; // replace with your image paths
+    import img3 from '/static/second.jpg'; 
+    import img4 from '/static/front.jpg'; 
+    import img5 from '/static/oldFiddle.jpg'; 
+    import img6 from '/static/purfling.jpg'; 
+    import img7 from '/static/ribs.jpg'; 
+    import img8 from '/static/sawnback.jpg'; 
+    import img9 from '/static/scroll.jpg'; 
+    import img10 from '/static/Stradivarius.jpg'; 
+    import img11 from '/static/stradFront.jpg'; 
+    import img12 from '/static/stradBack.jpg'; 
   
-    onMount(() => {
-      // Any setup logic can be placed here
-    });
   </script>
 
 
