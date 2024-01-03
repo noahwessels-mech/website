@@ -4,18 +4,18 @@
 
 
 <script>
-    import img1 from '/static/back.jpg'; // replace with your image paths
+    import img1 from '/static/back.JPG'; // replace with your image paths
     import img2 from '/static/carvingScroll.jpg'; // replace with your image paths
-    import img3 from '/static/second.jpg'; 
-    import img4 from '/static/front.jpg'; 
-    import img5 from '/static/oldFiddle.jpg'; 
+    import img3 from '/static/second.JPG'; 
+    import img4 from '/static/front.JPG'; 
+    import img5 from '/static/oldFiddle.JPG'; 
     import img6 from '/static/purfling.jpg'; 
-    import img7 from '/static/ribs.jpg'; 
+    import img7 from '/static/ribs.JPG'; 
     import img8 from '/static/sawnback.jpg'; 
-    import img9 from '/static/scroll.jpg'; 
+    import img9 from '/static/scroll.JPG'; 
     import img10 from '/static/Stradivarius.jpg'; 
-    import img11 from '/static/stradFront.jpg'; 
-    import img12 from '/static/stradBack.jpg'; 
+    import img11 from '/static/stradFront.JPG'; 
+    import img12 from '/static/stradBack.JPG'; 
   
   </script>
 
