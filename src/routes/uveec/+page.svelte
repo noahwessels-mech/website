@@ -93,4 +93,38 @@
     </div>
 
   </div>
+
+
+<!--Mechanical Team Section-->
+    <div class="flex flex-wrap items-center mt-4">
+  
+      <!--Sub Images and Description Section-->
+      <div class="w-full md:w-1/2">
+  
+        <div class="flex flex-wrap items-center">
+  
+          <!--Sub Image 1-->
+          <div class="w-full md:w-1/3">
+            <img alt="testing" class=" px-1 block w-full" src="{img3}">
+          </div>
+  
+          <!--Sub Image 2-->
+          <div class="w-full md:w-2/3">
+            <img alt="Sub2" class=" px-1 block w-full" src="{img2}">
+          </div>
+  
+        </div>
+      </div>
+  
+      <!--Sub Description-->
+      <div class="w-full md:w-1/2 px-6">
+        <p class="">
+          As a member of the mechanical team, I helped design the joining structure for the hulls and was involved in the fiberglass hull manufacturing.
+        </p>
+      </div>
+  
+    </div>
+
+
+
 </div>
