@@ -57,7 +57,7 @@
             <img class="w-full h-80 object-cover" src={img8} alt="End product of the machining process" />
             </div>
           <div>
-            <p>The MECH Machine Shop laser was frequently used for cutting parts for student projects. I also cut several flywheel powered carts from plywood for a 3rd year design project, as shown in the second photo.</p>
+            <p>During my co-op, the MECH Machine Shop laser was frequently used for cutting parts for student projects. I also cut several flywheel powered carts from plywood for a 3rd year design project, as shown in the second photo.</p>
           </div>
         </div>
 
