@@ -8,7 +8,8 @@
     
     import img1 from '/static/USV.jpg'; // replace with your image paths
     import img2 from '/static/testing.jpg'; // replace with your image paths
-    import img3 from '/static/hullManufacturing.JPG'; 
+    import img3 from '/static/hullManufacturing.JPG';
+    import img4 from '/static/gliderRender.jpeg'; 
   
     onMount(() => {
       // Any setup logic can be placed here
@@ -74,14 +75,22 @@
 
   <div class="container mx-auto px-4 md:px-8">
 
-    <!--Main Image and Description Section-->
-    <h2 class="text-2xl font-semibold text-center py-4">Underwater Glider Project</h2>
-    <div class="flex flex-wrap items-center justify-center mt-4">
-  
-      <div class="w-full md:w-1/2 px-6">
-        <p class="text-grey-darker">
-          The underwater glider project began in the summer of 2023. UVEEC is designing and manufacturing a glider cabable of traversing the Saanich inlet, a local uniquely anoxic inlet. CTD data will be collected to create salinity stratification profiles to display the mixing effects of runnoff water into the ocean and the impacts of the tide.
-        </p>
-      </div>
+  <!--Main Image and Description Section-->
+  <h2 class="text-2xl font-semibold text-center py-4">Underwater Glider Project</h2>
+
+  <div class="flex flex-wrap md:flex-nowrap items-center justify-center mt-4 gap-6">
+    
+    <!-- Image on the left -->
+    <div class="w-full md:w-1/2 px-6">
+      <img src={img4} alt="Underwater glider photo" class="w-full h-64 object-cover rounded-xl shadow-md" />
     </div>
+
+    <!-- Text on the right -->
+    <div class="w-full md:w-1/2 px-6">
+      <p class="text-gray-700">
+        The underwater glider project began in the summer of 2023. UVEEC is designing and manufacturing a glider capable of traversing the Saanich Inlet, a local uniquely anoxic inlet. CTD data will be collected to create salinity stratification profiles to display the mixing effects of runoff water into the ocean and the impacts of the tide.
+      </p>
+    </div>
+
   </div>
+</div>
