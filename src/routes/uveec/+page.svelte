@@ -82,7 +82,7 @@
     
     <!-- Image on the left -->
     <div class="w-full md:w-1/2 px-6">
-      <img src={img4} alt="Underwater glider photo" class="w-full h-64 object-cover rounded-xl shadow-md" />
+      <img src={img4} alt="Underwater glider photo" class="w-full h-64 object-cover" />
     </div>
 
     <!-- Text on the right -->
