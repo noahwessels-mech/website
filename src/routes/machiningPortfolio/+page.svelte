@@ -18,7 +18,7 @@
     import img9 from '/static/aluminumForks.JPG';
     import img10 from '/static/brassFork.JPG';
     import img11 from '/static/flywheelCart.jpeg';
-     import img11 from '/static/laserWood.JPG';
+    import img12 from '/static/laserWood.JPG';
   
     onMount(() => {
     document.querySelector("#footerNote").addEventListener('click', () => {
