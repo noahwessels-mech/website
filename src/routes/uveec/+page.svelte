@@ -95,9 +95,17 @@
   </div>
 
 
-<!--Mechanical Team Section-->
+<!--Glider pt 2 Section-->
     <div class="flex flex-wrap items-center mt-4">
   
+  
+      <!--Sub Description-->
+      <div class="w-full md:w-1/2 px-6">
+        <p class="">
+          During the duration of this project I have been acting as the project manager, as well as the president of the club. We have completed the detailed design of the glider, and manufacturing is underway.
+        </p>
+      </div>
+
       <!--Sub Images and Description Section-->
       <div class="w-full md:w-1/2">
   
@@ -114,13 +122,6 @@
           </div>
   
         </div>
-      </div>
-  
-      <!--Sub Description-->
-      <div class="w-full md:w-1/2 px-6">
-        <p class="">
-          As a member of the mechanical team, I helped design the joining structure for the hulls and was involved in the fiberglass hull manufacturing.
-        </p>
       </div>
   
     </div>
