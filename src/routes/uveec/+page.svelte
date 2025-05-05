@@ -10,6 +10,8 @@
     import img2 from '/static/testing.jpg'; // replace with your image paths
     import img3 from '/static/hullManufacturing.JPG';
     import img4 from '/static/gliderRender.jpeg'; 
+    import img5 from '/static/glidersection.jpeg';
+    import img6 from '/static/glidersection.jpeg'; 
   
     onMount(() => {
       // Any setup logic can be placed here
@@ -113,12 +115,12 @@
   
           <!--Sub Image 1-->
           <div class="w-full md:w-1/3">
-            <img alt="testing" class=" px-1 block w-full" src="{img3}">
+            <img alt="CAD Section View" class=" px-1 block w-full" src="{img5}">
           </div>
   
           <!--Sub Image 2-->
           <div class="w-full md:w-2/3">
-            <img alt="Sub2" class=" px-1 block w-full" src="{img2}">
+            <img alt="" class=" px-1 block w-full" src="{img6}">
           </div>
   
         </div>
