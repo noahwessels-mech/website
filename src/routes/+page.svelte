@@ -11,7 +11,7 @@
 
 <Contact/>
 <div class="py-4 flex justify-center items-center space-x-8">
-    <img src={lathe} alt="MENG shop" class="p-2 w-1/3 flex justify-center"/>
+    <img src={lathe} alt="MENG shop" class="p-2 w-1.3/3 flex justify-center"/>
     <div class="w-96">
         <p class="">4th year mechanical engineering student at the University of Victoria and the UVic Environmental Engineering Club Project Manager.</p>
         <p class="">In my free time I enjoy playing the banjo, rock climbing, and making violins.</p>
