@@ -109,8 +109,8 @@
 
   <!-- Images stacked on the right -->
   <div class="w-full md:w-1/2 space-y-4 px-6">
-    <img alt="CAD Section View" class="w-full rounded shadow-md" src={img5} />
-    <img alt="Title" class="w-full rounded shadow-md" src={img6} />
+    <img alt="CAD Section View" class="w-full" src={img5} />
+    <img alt="Title" class="w-full" src={img6} />
   </div>
 
 </div>
