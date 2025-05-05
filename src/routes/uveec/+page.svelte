@@ -97,36 +97,23 @@
   </div>
 
 
-<!--Glider pt 2 Section-->
-    <div class="flex flex-wrap items-center mt-4">
-  
-  
-      <!--Sub Description-->
-      <div class="w-full md:w-1/2 px-6">
-        <p class="">
-          During the duration of this project I have been acting as the project manager, as well as the president of the club. We have completed the detailed design of the glider, and manufacturing is underway.
-        </p>
-      </div>
+<!-- Glider pt 2 Section -->
+<div class="flex flex-wrap items-center mt-4">
 
-      <!--Sub Images and Description Section-->
-      <div class="w-full md:w-1/2">
-  
-        <div class="flex flex-wrap items-center">
-  
-          <!--Sub Image 1-->
-          <div class="w-full">
-            <img alt="CAD Section View" class="w-full" src="{img5}">
-          </div>
-  
-          <!--Sub Image 2-->
-          <div class="w-full">
-            <img alt="title" class="w-full" src="{img6}">
-          </div>
-  
-        </div>
-      </div>
-  
-    </div>
+  <!-- Description on the left -->
+  <div class="w-full md:w-1/2 px-6">
+    <p>
+      During the duration of this project I have been acting as the project manager, as well as the president of the club. We have completed the detailed design of the glider, and manufacturing is underway.
+    </p>
+  </div>
+
+  <!-- Images stacked on the right -->
+  <div class="w-full md:w-1/2 space-y-4 px-6">
+    <img alt="CAD Section View" class="w-full rounded shadow-md" src={img5} />
+    <img alt="Title" class="w-full rounded shadow-md" src={img6} />
+  </div>
+
+</div>
 
 
 
