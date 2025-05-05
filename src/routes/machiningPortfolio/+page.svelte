@@ -55,7 +55,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center mb-4">
         <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
             <img class="w-full h-80 object-cover" src={img8} alt="Description of the machining process" />
-            <img class="w-full h-80 object-contain" src={img11} alt="End product of the machining process" />
+            <img class="w-full object-contain" src={img11} alt="End product of the machining process" />
             </div>
           <div>
             <p>During my co-op, the MECH Machine Shop laser was frequently used for cutting parts for student projects. I also cut several flywheel powered carts from plywood for a 3rd year design project, as shown in the second photo.</p>
