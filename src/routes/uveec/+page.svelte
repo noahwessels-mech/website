@@ -11,7 +11,7 @@
     import img3 from '/static/hullManufacturing.JPG';
     import img4 from '/static/gliderRender.jpeg'; 
     import img5 from '/static/gliderSection.jpeg';
-    import img6 from '/static/gliderSection.jpeg'; 
+    import img6 from '/static/CFD.jpeg'; 
   
     onMount(() => {
       // Any setup logic can be placed here
