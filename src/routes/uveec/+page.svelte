@@ -120,7 +120,7 @@
   
           <!--Sub Image 2-->
           <div class="w-full md:w-2/3">
-            <img alt="" class=" px-1 block w-full" src="{img6}">
+            <img alt="title" class=" px-1 block w-full" src="{img6}">
           </div>
   
         </div>
