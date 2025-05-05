@@ -115,12 +115,12 @@
   
           <!--Sub Image 1-->
           <div class="w-full md:w-1/3">
-            <img alt="CAD Section View" class=" px-1 block w-full" src="{img5}">
+            <img alt="CAD Section View" class="w-full" src="{img5}">
           </div>
   
           <!--Sub Image 2-->
           <div class="w-full md:w-2/3">
-            <img alt="title" class=" px-1 block w-full" src="{img6}">
+            <img alt="title" class="w-full" src="{img6}">
           </div>
   
         </div>
