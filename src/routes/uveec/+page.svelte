@@ -1,120 +1,164 @@
-<!-- Svelte head changes the title of the tab -->
+<script>
+  import { onMount } from 'svelte';
+  import { fade, fly } from 'svelte/transition';
+  
+  import CardList from '../../components/card-list.svelte';
+  import usvImg from '$lib/assets/images/USV.jpg';
+  import testingImg from '$lib/assets/images/testing.jpg';
+  import hullImg from '$lib/assets/images/hullManufacturing.JPG';
+  import gliderImg from '$lib/assets/images/gliderRender.jpeg';
+  import sectionImg from '$lib/assets/images/gliderSection.jpeg';
+  import cfdImg from '$lib/assets/images/CFD.jpeg';
+  import HeroSection from '../../components/sub-hero.svelte';
+  
+    function goToProjects() {
+      // navigate or scroll to projects section
+      console.log("Navigating to Projects");
+    }
+  
+    function learnMore() {
+      // navigate to About page or section
+      console.log("Navigating to Learn More");
+    }
+
+  // Project sections data
+  const featuredProjects = [
+    {
+      title: 'Microplastic Collecting Unmanned Surface Vehicle',
+      category: 'Marine Technology',
+      categoryColor: 'bg-blue-100 text-blue-800',
+      description: `This USV uses microbubble filtration technology to collect microplastics from the surface waters of Saanich Inlet. I led the mechanical design of the filtration housing and oversaw field trials in summer 2022.`,
+      images: [usvImg],
+      details: ['Summer 2022', 'Mechanical Design Lead'],
+      stats: null
+    },
+    {
+      title: 'Mechanical Team Contributions',
+      category: 'Manufacturing',
+      categoryColor: 'bg-green-100 text-green-800',
+      description: `As part of the mechanical team, I designed the joining structure for the hulls and managed the fiberglass hull manufacturing process. We achieved a 20% weight reduction over our initial prototype.`,
+      images: [hullImg, testingImg],
+      details: ['Hull Design', 'Manufacturing Process'],
+      stats: { label: 'Weight Reduction', value: '20%', color: 'text-green-600' }
+    },
+    {
+      title: 'Underwater Glider Project',
+      category: 'Underwater Systems', 
+      categoryColor: 'bg-purple-100 text-purple-800',
+      description: `Launched in summer 2023, our glider traverses the anoxic depths of Saanich Inlet to collect CTD data, creating detailed salinity stratification profiles to study mixing effects of runoff and tidal flows.`,
+      images: [gliderImg],
+      details: [
+        { label: 'Launch Date', value: 'Summer 2023' },
+        { label: 'Data Type', value: 'CTD Profiles' }
+      ],
+      stats: null
+    },
+    {
+      title: 'Design & Manufacturing',
+      category: 'Leadership & CAD',
+      categoryColor: 'bg-orange-100 text-orange-800',
+      description: `In my role as project manager and club president, I led the detailed CAD design and oversaw manufacturing. Below are sectional CAD views and CFD results highlighting our optimization process.`,
+      images: [sectionImg, cfdImg],
+      details: null,
+      tags: ['Project Manager', 'Club President', 'CAD Design', 'CFD Analysis'],
+      stats: null
+    }
+  ];
+
+  const stats = [
+    { value: '2', label: 'Major Projects', color: 'text-blue-400' },
+    { value: '20%', label: 'Weight Reduction', color: 'text-green-400' },
+    { value: '2023', label: 'Latest Launch', color: 'text-purple-400' },
+    { value: '∞', label: 'Innovation', color: 'text-orange-400' }
+  ];
+
+  let mounted = false;
+
+  onMount(() => {
+    mounted = true;
+  });
+</script>
+
 <svelte:head>
-    <title>UVEEC</title>
+  <title>UVEEC Projects | Noah Wessel</title>
+  <meta name="description" content="Noah Wessels's contributions to the UVic Environmental Engineering Club's USV and glider projects." />
 </svelte:head>
 
-<script>
-    import { onMount } from 'svelte';
+<main class="pt-20 bg-gray-50">
+  <!-- Hero Section -->
+  <script>
     
-    import img1 from '/static/USV.jpg'; // replace with your image paths
-    import img2 from '/static/testing.jpg'; // replace with your image paths
-    import img3 from '/static/hullManufacturing.JPG';
-    import img4 from '/static/gliderRender.jpeg'; 
-    import img5 from '/static/gliderSection.jpeg';
-    import img6 from '/static/CFD.jpeg'; 
-  
-    onMount(() => {
-      // Any setup logic can be placed here
-    });
   </script>
+  
+  <HeroSection 
+    title="UVic Environmental"
+    highlighted="Engineering Club"
+    subtitle="Explore student-led innovations in marine and environmental engineering."
+    primaryButton="Explore Projects"
+    secondaryButton="Meet the Team"
+    showButtons={true}
+    onPrimaryClick={() => document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' })}
+    onSecondaryClick={() => document.getElementById('video').scrollIntoView({ behavior: 'smooth' })}
+/>
 
 
-
-
-
-<h1 class="py-4 flex justify-center font-semibold text-3xl">UVEEC</h1>
-<div class="flex justify-center">
-<p class="w-1/2">The <a class="px-1 text-blue-500 underline" href="https://uveec.ca/" target="_blank">UVic Environmental Engineering Club</a> (UVEEC) is focused on creating engineering solutions to environmental issues. I joined the mechanical team in 2021 in my first semester at UVic. I am the current project manager for the underwater glider project.</p>
-</div>
-
-<div class="container mx-auto px-4 md:px-8">
-
-    <!--Main Image and Description Section-->
-    <h2 class="text-2xl font-semibold text-center py-4">Microplastic Collecting Unmanned Surface Vehicle</h2>
-    <div class="flex flex-wrap items-center mt-4">
-      <div class="w-full md:w-1/2">
-        <img alt="Unmanned Surface Vehicle" class="block h-auto w-full" src="{img1}">
+<!-- Featured Projects Section -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Innovative engineering solutions addressing critical environmental challenges through cutting-edge technology and sustainable design.
+          </p>
       </div>
-  
-      <div class="w-full md:w-1/2 px-6">
-        <p class="text-grey-darker">
-          This unmanned surface vehicle (USV) was equipped with a filtration module using microbubble filtration technology to collect microplastics.
-        </p>
+      
+      <CardList sections={featuredProjects} />
+  </div>
+</section>
+
+  <!-- Stats Section -->
+  <section class="bg-gray-800 text-white py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" in:fade={{ delay: 100, duration: 600 }}>
+        <h2 class="text-4xl font-bold mb-4">Project Impact</h2>
+        <p class="text-xl text-gray-300">Measurable results from our environmental engineering initiatives</p>
       </div>
-    </div>
-  
-    <!--Mechanical Team Section-->
-    <div class="flex flex-wrap items-center mt-4">
-  
-      <!--Sub Images and Description Section-->
-      <div class="w-full md:w-1/2">
-  
-        <div class="flex flex-wrap items-center">
-  
-          <!--Sub Image 1-->
-          <div class="w-full md:w-1/3">
-            <img alt="testing" class=" px-1 block w-full" src="{img3}">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+        {#each stats as stat, i}
+          <div 
+            class="text-center"
+            in:fly={{ y: 50, delay: i * 100 + 300, duration: 600 }}
+          >
+            <div class="text-5xl font-bold {stat.color} mb-2">{stat.value}</div>
+            <div class="text-gray-300">{stat.label}</div>
           </div>
-  
-          <!--Sub Image 2-->
-          <div class="w-full md:w-2/3">
-            <img alt="Sub2" class=" px-1 block w-full" src="{img2}">
-          </div>
-  
-        </div>
+        {/each}
       </div>
+    </div>
+  </section>
+</main>
+
+
+
+<style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
   
-      <!--Sub Description-->
-      <div class="w-full md:w-1/2 px-6">
-        <p class="">
-          As a member of the mechanical team, I helped design the joining structure for the hulls and was involved in the fiberglass hull manufacturing.
-        </p>
-      </div>
+  :global(::-webkit-scrollbar) {
+    width: 8px;
+  }
   
-    </div>
-  </div>
-
-
-  <div class="container mx-auto px-4 md:px-8">
-
-  <!--Main Image and Description Section-->
-  <h2 class="text-2xl font-semibold text-center py-4">Underwater Glider Project</h2>
-
-  <div class="flex flex-wrap md:flex-nowrap items-center justify-center mt-4 gap-6">
-    
-    <!-- Image on the left -->
-    <div class="w-full md:w-1/2 px-6">
-      <img src={img4} alt="Underwater glider photo" class="w-full h-64 object-cover" />
-    </div>
-
-    <!-- Text on the right -->
-    <div class="w-full md:w-1/2 px-6">
-      <p class="text-gray-700">
-        The underwater glider project began in the summer of 2023. UVEEC is designing and manufacturing a glider capable of traversing the Saanich Inlet, a local uniquely anoxic inlet. CTD data will be collected to create salinity stratification profiles to display the mixing effects of runoff water into the ocean and the impacts of the tide.
-      </p>
-    </div>
-
-  </div>
-
-
-<!-- Glider pt 2 Section -->
-<div class="flex flex-wrap items-center mt-4">
-
-  <!-- Description on the left -->
-  <div class="w-full md:w-1/2 px-6">
-    <p>
-      During the duration of this project I have been acting as the project manager, as well as the president of the club. We have completed the detailed design of the glider, and manufacturing is underway.
-    </p>
-  </div>
-
-  <!-- Images stacked on the right -->
-  <div class="w-full md:w-1/2 space-y-4 px-6">
-    <img alt="CAD Section View" class="w-full" src={img5} />
-    <img alt="Title" class="w-full" src={img6} />
-  </div>
-
-</div>
-
-
-
-</div>
+  :global(::-webkit-scrollbar-track) {
+    background: #f1f5f9;
+  }
+  
+  :global(::-webkit-scrollbar-thumb) {
+    background: #64748b;
+    border-radius: 4px;
+  }
+  
+  :global(::-webkit-scrollbar-thumb:hover) {
+    background: #475569;
+  }
+</style>
