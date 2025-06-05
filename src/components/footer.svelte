@@ -11,6 +11,7 @@
           <a href="/uveec" class="hover:text-white transition-colors duration-200">UVEEC</a>
           <a href="/machiningPortfolio" class="hover:text-white transition-colors duration-200">Machining</a>
           <a href="/violinMaking" class="hover:text-white transition-colors duration-200">Violin Making</a>
+          <a href="/experiences" class="hover:text-white transition-colors duration-200">Experiences</a>
         </div>
       </div>
       <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
