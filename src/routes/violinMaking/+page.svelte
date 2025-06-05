@@ -60,25 +60,6 @@
                 value: "2.5K+",
                 color: "text-blue-600"
             }
-        },
-        {
-            category: "Heritage",
-            categoryColor: "bg-amber-100 text-amber-800",
-            title: "Cremona Experience",
-            description: "Studied the birthplace of modern violin making in Cremona, Italy. Immersed in the rich tradition of Italian luthiers and historical violin craftsmanship.",
-            images: [img10, img11],
-            details: [
-                { label: "Visit Year", value: "2023" },
-                { label: "Duration", value: "2 Weeks" },
-                { label: "Focus", value: "Traditional Methods" },
-                { label: "Language", value: "Italian Study" }
-            ],
-            tags: ["Cultural Immersion", "Traditional Learning", "Historical Study"],
-            stats: {
-                label: "Experience",
-                value: "Invaluable",
-                color: "text-amber-600"
-            }
         }
     ];
 
@@ -122,7 +103,7 @@
         },
         {
             step: "05",
-            title: "Varnishing",
+            title: "Varnishing and setting up",
             description: "Applying multiple coats of traditional oil varnish for protection and tonal enhancement.",
             icon: "🎨"
         }
@@ -201,8 +182,8 @@
             </p>
         </div>
         
-        <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-black/20 backdrop-blur-sm p-8">
-            <div class="aspect-video rounded-2xl overflow-hidden">
+        <div class="relative rounded-3xl md:h-screen overflow-hidden shadow-2xl bg-black/20 backdrop-blur-sm p-8">
+            <div class="aspect-video rounded-2xl md:h-screen overflow-hidden">
                 <iframe 
                     class="w-full h-full" 
                     title="Violin Making Process" 
