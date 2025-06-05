@@ -68,7 +68,7 @@
     description: 'This endcap was milled for the Autonomous Underwater Vehicle Interdisciplinary Club (AUVIC). 20 holes were spot-faced and drilled into a large aluminum plate for WetLink penetrators, with 4 additional holes for the internal mounting system to be attached.',
     images: [img3, img4],
     details: [
-      { label: 'Holes Drilled', value: '20 + 4' },
+      { label: 'Critical Sealing Surfaces', value: '21' },
       { label: 'Purpose', value: 'WetLink Penetrators' }
     ],
     tags: ['AUVIC', 'Aluminum', 'Spot-facing', 'Drilling'],
@@ -78,7 +78,7 @@
     title: 'AUV Internal Components',
     category: 'AUV Components',
     categoryColor: 'bg-purple-100 text-purple-800',
-    description: 'Posts and plates were turned and milled from aluminum to hold the electronics inside of the AUV.',
+    description: 'Post and plate parts were turned and milled from aluminum to hold the electronics and payloads inside of an AUV and a rocket for UVic student design teams.',
     images: [img5, img6],
     details: ['Electronics Mounting', 'Internal Structure'],
     tags: ['AUVIC', 'Aluminum', 'Electronics', 'Structural'],
