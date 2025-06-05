@@ -1,5 +1,5 @@
 <script>
-    import portraitUrl from "$lib/assets/images/lathe-2382x1340.jpg";
+    import portraitUrl from "$lib/assets/images/lathe.jpg";
     import Contact from "../components/contact.svelte";
     
     // Animation trigger for content
@@ -15,27 +15,36 @@
 </script>
 
 <!-- Hero Section -->
-<section class="relative w-full h-screen overflow-hidden">
-    <!-- Full-width background image with subtle parallax effect -->
-    <div class="absolute inset-0 transform scale-105 transition-transform duration-1000 ease-out">
-        <img 
-            src={portraitUrl}
-            alt="Noah Wessels working in the engineering lab"
-            class="w-full h-full object-cover object-center"
-        />
+<section class="relative w-full h-screen overflow-hidden flex">
+    <!-- Left half - Image -->
+    <div class="relative w-1/2 h-full overflow-hidden">
+        <!-- Image with subtle parallax effect -->
+        <div class="absolute inset-0 transform scale-105 transition-transform duration-1000 ease-out">
+            <img 
+                src={portraitUrl}
+                alt="Noah Wessels working in the engineering lab"
+                class="w-full h-full object-cover object-center"
+            />
+        </div>
+        
+        <!-- Subtle overlay on image for depth -->
+        <div class="absolute inset-0 bg-black/10"></div>
+        
+        <!-- Fade effect on the right edge of the image -->
+        <div class="absolute inset-0 bg-image-fade"></div>
+        
+        <!-- Floating geometric elements on image side -->
+        <div class="absolute top-20 right-10 w-32 h-32 border border-white/30 rotate-45 animate-float hidden lg:block"></div>
+        <div class="absolute bottom-40 left-1/4 w-16 h-16 bg-blue-500/20 rounded-full animate-pulse hidden md:block"></div>
     </div>
     
-    <!-- Enhanced gradient overlay with multiple layers -->
-    <div class="absolute inset-0 bg-gradient-overlay"></div>
-    <div class="absolute inset-0 bg-subtle-grain opacity-20"></div>
-    
-    <!-- Floating geometric elements -->
-    <div class="absolute top-20 right-20 w-32 h-32 border border-white/20 rotate-45 animate-float hidden lg:block"></div>
-    <div class="absolute bottom-40 left-1/4 w-16 h-16 bg-blue-500/10 rounded-full animate-pulse hidden md:block"></div>
-    
-    <!-- Content positioned over the overlay -->
-    <div class="relative z-10 container mx-auto flex items-center justify-end h-full px-6">
-        <div class="w-full md:w-1/2 text-center md:text-left max-w-lg">
+    <!-- Right half - White background with content -->
+    <div class="relative w-1/2 h-full bg-white flex items-center justify-center px-8 lg:px-12">
+        <!-- Subtle texture overlay for the white area -->
+        <div class="absolute inset-0 bg-subtle-grain opacity-5"></div>
+        
+        <!-- Content container -->
+        <div class="relative z-10 w-full max-w-lg">
             <!-- Animated content container -->
             <div class="content-container" class:visible={contentVisible}>
                 <!-- Enhanced greeting with subtle animation -->
@@ -47,7 +56,7 @@
                 </div>
                 
                 <!-- Enhanced name with gradient text -->
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
                     <span class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
                         Noah Wessels
                     </span>
@@ -92,19 +101,17 @@
 </section>
 
 <style>
-    /* Enhanced gradient overlay */
-    .bg-gradient-overlay {
+    /* Image fade effect */
+    .bg-image-fade {
         background: linear-gradient(
             to right,
             transparent 0%,
-            transparent 55%,
-            rgba(255, 255, 255, 0.05) 58%,
-            rgba(255, 255, 255, 0.15) 61%,
-            rgba(255, 255, 255, 0.35) 64%,
-            rgba(255, 255, 255, 0.65) 67%,
-            rgba(255, 255, 255, 0.85) 70%,
-            rgba(255, 255, 255, 0.95) 73%,
-            rgb(255, 255, 255) 75%
+            transparent 70%,
+            rgba(255, 255, 255, 0.1) 80%,
+            rgba(255, 255, 255, 0.3) 85%,
+            rgba(255, 255, 255, 0.6) 90%,
+            rgba(255, 255, 255, 0.8) 95%,
+            rgba(255, 255, 255, 1) 100%
         );
     }
     
@@ -164,9 +171,9 @@
         animation: float 6s ease-in-out infinite;
     }
     
-    /* Mobile responsive improvements */
+    /* Mobile responsive - stack vertically */
     @media (max-width: 768px) {
-        .bg-gradient-overlay {
+        .bg-image-fade {
             background: linear-gradient(
                 to bottom,
                 transparent 0%,
@@ -179,11 +186,18 @@
                 rgb(255, 255, 255) 80%
             );
         }
+        section {
+            flex-direction: column;
+        }
         
-        .container {
-            justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 2rem;
+        section > div {
+            width: 100% !important;
+            height: 50% !important;
+        }
+        
+        /* Adjust image positioning for mobile */
+        .object-cover {
+            object-position: center top;
         }
         
         /* Enhanced mobile typography */
@@ -191,25 +205,34 @@
             font-size: 2.5rem;
             line-height: 1.1;
         }
+        
+        /* Reduce padding on mobile */
+        section > div:last-child {
+            padding: 1rem;
+        }
     }
     
-    /* Better contrast for small screens */
+    /* Better spacing for small screens */
     @media (max-width: 640px) {
-        .bg-gradient-overlay {
+        .bg-image-fade {
             background: linear-gradient(
                 to bottom,
                 transparent 0%,
-                transparent 45%,
-                rgba(255, 255, 255, 0.2) 50%,
-                rgba(255, 255, 255, 0.5) 55%,
-                rgba(255, 255, 255, 0.75) 60%,
-                rgba(255, 255, 255, 0.9) 65%,
-                rgb(255, 255, 255) 70%
+                transparent 50%,
+                rgba(255, 255, 255, 0.1) 55%,
+                rgba(255, 255, 255, 0.3) 60%,
+                rgba(255, 255, 255, 0.6) 65%,
+                rgba(255, 255, 255, 0.8) 70%,
+                rgba(255, 255, 255, 0.95) 75%,
+                rgb(255, 255, 255) 80%
             );
         }
-        
         h1 {
             font-size: 2rem;
+        }
+        
+        section > div:last-child {
+            padding: 0.75rem;
         }
     }
     
