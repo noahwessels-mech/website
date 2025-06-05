@@ -1,14 +1,17 @@
 <script>
-    import Nav from "../components/nav.svelte"
-    import Footer from "../components/footer.svelte"
+    import Nav from "../components/nav.svelte";
+    import Footer from "../components/footer.svelte";
 </script>
 
-<Nav/>
+<div class="min-h-screen flex flex-col pt-16"> 
+    <Nav />
 
-<slot></slot>
+    <main class="flex-1">
+        <slot />
+    </main>
 
-
-<Footer/>
+    <Footer />
+</div>
 
 <style>
     @tailwind base;
