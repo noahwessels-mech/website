@@ -11,83 +11,89 @@
 	import cfdImg from '$lib/assets/images/CFD.jpeg';
 	import HeroSection from '../../components/sub-hero.svelte';
 	import CardGroup from '../../components/card-group.svelte';
-  let groupSpacing = 'mb-32';
+	let groupSpacing = 'mb-32';
 	// Project sections data
-  const cardGroups = [
-	{
-		title: 'Marine Research & Technology',
-		description:
-			'Innovative underwater systems and marine technology projects focused on environmental monitoring and ocean conservation in Saanich Inlet.',
-		sections: [
-			{
-				title: 'Microplastic Collecting Unmanned Surface Vehicle',
-				category: 'Marine Technology',
-				categoryColor: 'bg-blue-100 text-blue-800',
-				description: `This USV uses microbubble filtration technology to collect microplastics from the surface waters of Saanich Inlet. I led the mechanical design of the filtration housing and oversaw field trials in summer 2022.`,
-				images: [usvImg],
-				details: ['Summer 2022', 'Mechanical Design Lead'],
-				tags: ['Environmental Tech', 'Filtration Systems', 'Field Testing'],
-				stats: null
-			},
-			{
-				title: 'Underwater Glider Project',
-				category: 'Underwater Systems',
-				categoryColor: 'bg-purple-100 text-purple-800',
-				description: `Launched in summer 2023, our glider traverses the anoxic depths of Saanich Inlet to collect CTD data, creating detailed salinity stratification profiles to study mixing effects of runoff and tidal flows.`,
-				images: [gliderImg],
-				details: [
-					{ label: 'Launch Date', value: 'Winter 2025' },
-					{ label: 'Data Type', value: 'CTD Profiles' },
-					{ label: 'Environment', value: 'Anoxic Waters' },
-					{ label: 'Purpose', value: 'Salinity Analysis' }
-				],
-				tags: ['Oceanography', 'Data Collection', 'Autonomous Systems'],
-				stats: null
-			}
-		]
-	},
-	{
-		title: 'Engineering Design & Manufacturing',
-		description:
-			'Advanced mechanical design, manufacturing processes, and leadership in developing high-performance marine vehicle systems.',
-		sections: [
-			{
-				title: 'Hull Design & Manufacturing Excellence',
-				category: 'Manufacturing',
-				categoryColor: 'bg-green-100 text-green-800',
-				description: `As part of the mechanical team, I designed the joining structure for the hulls and managed the fiberglass hull manufacturing process. We achieved a 20% weight reduction over our initial prototype through innovative design and material optimization.`,
-				images: [hullImg, testingImg],
-				details: [
-					{ label: 'Process', value: 'Hull Design' },
-					{ label: 'Material', value: 'Fiberglass' },
-					{ label: 'Role', value: 'Manufacturing Lead' },
-					{ label: 'Achievement', value: '20% Weight Reduction' }
-				],
-				tags: ['Composite Materials', 'Weight Optimization', 'Quality Control'],
-				stats: { 
-					label: 'Weight Reduction', 
-					value: '20%', 
-					color: 'text-green-600' 
+	const cardGroups = [
+		{
+			title: 'Marine Research & Technology',
+			description:
+				'Innovative underwater systems and marine technology projects focused on environmental monitoring and ocean conservation in Saanich Inlet.',
+			sections: [
+				{
+					title: 'Microplastic Collecting Unmanned Surface Vehicle',
+					category: 'Marine Technology',
+					categoryColor: 'bg-blue-100 text-blue-800',
+					description: `This USV uses microbubble filtration technology to collect microplastics from the surface waters of Saanich Inlet. I led the mechanical design of the filtration housing and oversaw field trials in summer 2022.`,
+					images: [usvImg],
+					details: ['Summer 2022', 'Mechanical Designer and Tester'],
+					tags: ['Environmental Tech', 'Filtration Systems', 'Field Testing'],
+					stats: null
+				},
+				{
+					title: 'Underwater Glider Project',
+					category: 'Underwater Systems',
+					categoryColor: 'bg-purple-100 text-purple-800',
+					description: `Launched in summer 2023, our glider traverses the anoxic depths of Saanich Inlet to collect CTD data, creating detailed salinity stratification profiles to study mixing effects of runoff and tidal flows.`,
+					images: [gliderImg],
+					details: [
+						{ label: 'Launch Date', value: 'Winter 2026 - Spring 2027' },
+						{ label: 'Data Type', value: 'CTD Profiles' },
+						{ label: 'Environment', value: 'Anoxic Waters' },
+						{ label: 'Purpose', value: 'Salinity Analysis' }
+					],
+					tags: ['Oceanography', 'Data Collection', 'Autonomous Systems'],
+					stats: null
 				}
-			},
-			{
-				title: 'Project Leadership & CAD Engineering',
-				category: 'Leadership & CAD',
-				categoryColor: 'bg-orange-100 text-orange-800',
-				description: `In my role as project manager and club president, I led the detailed CAD design and oversaw manufacturing operations. This comprehensive approach included sectional design analysis and CFD optimization to ensure optimal performance and manufacturability.`,
-				images: [sectionImg, cfdImg],
-				details: [
-					{ label: 'Leadership Role', value: 'Project Manager & President' },
-					{ label: 'Design Tool', value: 'Advanced CAD' },
-					{ label: 'Analysis', value: 'CFD Optimization' },
-					{ label: 'Scope', value: 'End-to-End Development' }
-				],
-				tags: ['Project Management', 'Club Leadership', 'CAD Design', 'CFD Analysis', 'Team Coordination'],
-				stats: null
-			}
-		]
-	}
-];
+			]
+		},
+		{
+			title: 'Engineering Design & Manufacturing',
+			description:
+				'Advanced mechanical design, manufacturing processes, and leadership in developing high-performance marine vehicle systems.',
+			sections: [
+				{
+					title: 'Hull Design & Manufacturing',
+					category: 'Manufacturing',
+					categoryColor: 'bg-green-100 text-green-800',
+					description: `As part of the mechanical team, I designed the joining structure for the hulls and managed the fiberglass hull manufacturing process. We achieved a 20% weight reduction over our initial prototype through innovative design and material optimization.`,
+					images: [hullImg, testingImg],
+					details: [
+						{ label: 'Process', value: 'Hull Design' },
+						{ label: 'Material', value: 'Fiberglass' },
+						{ label: 'Role', value: 'Manufacturing Lead' },
+						{ label: 'Achievement', value: '20% Weight Reduction' }
+					],
+					tags: ['Composite Materials', 'Weight Optimization', 'Quality Control'],
+					stats: {
+						label: 'Weight Reduction',
+						value: '20%',
+						color: 'text-green-600'
+					}
+				},
+				{
+					title: 'Project Leadership & CAD',
+					category: 'Leadership & CAD',
+					categoryColor: 'bg-orange-100 text-orange-800',
+					description: `In my role as project manager and club president, I led the detailed CAD design and oversaw manufacturing operations. This comprehensive approach included FEA and CFD analysis.`,
+					images: [sectionImg, cfdImg],
+					details: [
+						{ label: 'Leadership Role', value: 'Project Manager & President' },
+						{ label: 'Design Tools', value: 'Maxsurf and Onshape' },
+						{ label: 'Analysis', value: 'FEA and CFD' },
+						{ label: 'Scope', value: 'End-to-End Development' }
+					],
+					tags: [
+						'Project Management',
+						'Club Leadership',
+						'CAD Design',
+						'CFD Analysis',
+						'Team Coordination'
+					],
+					stats: null
+				}
+			]
+		}
+	];
 
 	const stats = [
 		{ value: '2', label: 'Major Projects', color: 'text-blue-400' },
@@ -133,23 +139,22 @@
 			</p>
 		</div>
 
-    {#each cardGroups as group, index}
-    <div class={index < cardGroups.length - 1 ? groupSpacing : ''}>
-      <CardGroup 
-        title={group.title}
-        description={group.description}
-        sections={group.sections}
-        maxWidth="max-w-7xl"
-        gap="gap-12"
-        titleColor="text-gray-900"
-        descriptionColor="text-gray-600"
-        headerSpacing="mb-16"
-      />
-    </div>
-  {/each}
+		{#each cardGroups as group, index}
+			<div class={index < cardGroups.length - 1 ? groupSpacing : ''}>
+				<CardGroup
+					title={group.title}
+					description={group.description}
+					sections={group.sections}
+					maxWidth="max-w-7xl"
+					gap="gap-12"
+					titleColor="text-gray-900"
+					descriptionColor="text-gray-600"
+					headerSpacing="mb-16"
+				/>
+			</div>
+		{/each}
 	</div>
 </section>
-
 
 <!-- Stats Section -->
 <section class="bg-gray-800 text-white py-20">
